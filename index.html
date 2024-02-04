@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emran Hossen</title>
+    <link rel="stylesheet" href="sytyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-e"></i>
+            <div class="logo-text">
+              <b>Emran Hossen</b>
+            </div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li>
+                <a href="https://www.stopstalk.com/user/profile/emranhossen">Problem Solving</a>
+              </li>
+              <li>
+                <a href="https://codeforces.com/profile/emran_?graphType=all">Contest Rating</a>
+              </li>
+               <li>
+                <a href="https://github.com/emmranhossen/Projects">Project</a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1G0gelDdLRqwuM7Bzztd1M2uWeDA8uDav/view?usp=sharing">Resume</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/emmranhossen/">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="images/main_photo.png" alt="profile pic">
+          </div>
+          <div class="hero-text">
+            <h5>Hi I'm <span class="input">Competitive Programmer</span>
+            </h5>
+            <h1>Emran Hossen</h1>
+            <p>Hello! I am Emran Hossen, a passionate competitive programmer and problem solver with a keen interest in algorithms, data structures, and the art of efficient coding. </p>
+            <div class="btn-group">
+              <a href="https://drive.google.com/file/d/1G0gelDdLRqwuM7Bzztd1M2uWeDA8uDav/view?usp=sharing" class="btn active">Resume</a>
+              <a href="https://www.facebook.com/emmranhossen/" class="btn">Contact</a>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/emranhossen/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://www.facebook.com/emmranhossen/">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+              <a href="https://github.com/emmranhossen">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- typed js for typint text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+      /** Creating button click show hide navbar **/
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
+      togglebtn.addEventListener("click", function() {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      })
+      var typed = new Typed(".input", {
+        strings: ["Competitive Programmer", "Problem Solver", "Student"],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop: true
+      })
+    </script>
+  </body>
+</html>
